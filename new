@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng bài viết</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #28a745; /* Màu xanh lá cây */
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Nguyễn Hữu Tea</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#postForm">Đăng bài viết</a>
+                </li>
+            </ul>
+        </div>    
+    </nav>
+
+    <!-- Form Container -->
+    <div class="container form-container">
+        <h1 class="text-center">Đăng bài viết mới</h1>
+        <form id="postForm">
+            <div class="mb-3">
+                <label for="title" class="form-label">Tiêu đề</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">Nội dung</label>
+                <textarea class="form-control" id="content" name="content" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Đăng bài</button>
+        </form>
+        <div id="posts" class="mt-5">
+            <h2 class="text-center">Bài viết đã đăng</h2>
+            <div id="postsContainer"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('postForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+
+            const postContainer = document.getElementById('postsContainer');
+            const postElement = document.createElement('div');
+            postElement.classList.add('post', 'mb-3', 'p-3', 'border', 'rounded');
+            postElement.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
+            postContainer.prepend(postElement);
+
+            document.getElementById('postForm').reset();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
