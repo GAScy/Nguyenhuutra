@@ -6,18 +6,35 @@
     <title>Bootstrap Example</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-5">Chào mừng mọi người đến công ty trà Nguyễn Hữu!</h1>
-
-    </div>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-
+    <style>
+        /* Custom CSS for green theme */
+        .navbar-light .navbar-nav .nav-link {
+            color: #28a745; /* Green */
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #218838; /* Darker green */
+        }
+        .navbar-light .navbar-brand {
+            color: #28a745; /* Green */
+        }
+        .navbar-light .navbar-brand:hover {
+            color: #218838; /* Darker green */
+        }
+        .bg-primary {
+            background-color: #28a745 !important; /* Green */
+        }
+        .btn-primary {
+            background-color: #28a745; /* Green */
+            border-color: #28a745; /* Green */
+        }
+        .btn-primary:hover {
+            background-color: #218838; /* Darker green */
+            border-color: #1e7e34; /* Even darker green */
+        }
+        footer {
+            background-color: #343a40; /* Dark */
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -45,13 +62,12 @@
     <header class="bg-primary text-white text-center py-5">
         <h1>Chào mừng đến với Nguyễn Hữu Tea</h1>
         <p>Trà chất lượng cao cho mọi gia đình</p>
-        <img src="path/to/logo.png" alt="logo"class="card-img-top"with="20">
+        <img src="path/to/logo.png" alt="logo" class="card-img-top" width="20">
     </header>
    
-
     <!-- Products Section -->
     <section id="products" class="py-5">
-        <div class="container">mm
+        <div class="container">
             <div class="row">
                 <!-- Trà ấm -->
                 <div class="col-md-4">
@@ -111,5 +127,8 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Nguyễn Hữu Tea. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
