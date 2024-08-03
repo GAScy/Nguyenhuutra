@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trà Nguyễn Hữu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f4f4f9;
+        }
+        .navbar {
+            background-color: #3b7a57;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .jumbotron {
+            background-image: url('path/to/tea-background.jpg');
+            background-size: cover;
+            color: #000;
+        }
+        .card {
+            border: none;
+        }
+        .card-title {
+            color: #3b7a57;
+        }
+        .btn-primary {
+            background-color: #3b7a57;
+            border: none;
+        }
+        footer {
+            background-color: #3b7a57;
+            color: #fff;
+        }
+        .post-card {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+        }
+        .post-card img {
+            max-width: 50px;
+            border-radius: 50%;
+        }
+        .post-card .profile-info {
+            display: flex;
+            align-items: center;
+        }
+        .post-card .profile-info .profile-name {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+            
+    <!-- Thanh điều hướng -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Trà Nguyễn Hữu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sp.html">Sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="andin.html">Đăng bài viết</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Sản phẩm -->
+<section id="products" class="container my-5">
+    <h2 class="text-center mb-4">Sản phẩm của chúng tôi</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="path/to/tra-am.jpg" class="card-img-top" alt="Trà ấm">
+                <div class="card-body">
+                    <h5 class="card-title">Trà ấm</h5>
+                    <p class="card-text">250.000đ - 350.000đ</p>
+                    <a href="checkout.html" class="btn btn-primary">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="path/to/tra-pha-che.jpg" class="card-img-top" alt="Trà pha chế">
+                <div class="card-body">
+                    <h5 class="card-title">Trà pha chế</h5>
+                    <p class="card-text">140.000đ - 280.000đ</p>
+                    <a href="checkout.html" class="btn btn-primary">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="path/to/nhan-sam.jpg" class="card-img-top" alt="Nhân sâm">
+                <div class="card-body">
+                    <h5 class="card-title">Nhân sâm</h5>
+                    <p class="card-text">200.000đ</p>
+                    <a href="checkout.html" class="btn btn-primary">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
